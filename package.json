@@ -1,20 +1,42 @@
 {
-  "name": "vite-plugin-vars-modifier",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/fanhaoyuan/vite-plugin-vars-modifier.git",
-  "author": "Jarvis <418536538@qq.com>",
-  "license": "MIT",
-  "dependencies": {
-    "fast-glob": "^3.2.7",
-    "less": "^4.1.1"
-  },
-  "devDependencies": {
-    "@types/less": "^3.0.3",
-    "@types/node": "^16.6.0",
-    "eslint": "^7.32.0",
-    "prettier": "^2.3.2",
-    "typescript": "^4.3.5",
-    "vite": "^2.4.4"
-  }
+    "name": "vite-plugin-vars-modifier",
+    "version": "1.0.0",
+    "main": "dist/vite-plugin-vars-modifier.cjs.js",
+    "types": "dist/types/index.d.ts",
+    "repository": "https://github.com/fanhaoyuan/vite-plugin-vars-modifier.git",
+    "author": "Fansy <418536538@qq.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "vite build --watch",
+        "build": "sh build.sh"
+    },
+    "gitHooks": {
+        "pre-commit": "lint-staged",
+        "commit-msg": "cmv"
+    },
+    "lint-staged": {
+        "*.{md,json}": [
+            "prettier --write"
+        ],
+        "*.{js,ts}": [
+            "prettier --write",
+            "eslint --fix"
+        ]
+    },
+    "dependencies": {
+        "fast-glob": "^3.2.7",
+        "less-json-vars": "^1.0.2"
+    },
+    "devDependencies": {
+        "@fansy/commit-msg-validator": "^1.0.0",
+        "@fansy/eslint-config": "^1.0.0",
+        "@fansy/prettier-config": "^1.0.0",
+        "@types/less": "^3.0.3",
+        "@types/node": "^16.6.0",
+        "eslint": "^7.32.0",
+        "lint-staged": "^11.1.2",
+        "prettier": "^2.3.2",
+        "typescript": "^4.3.5",
+        "vite": "^2.4.4"
+    }
 }
