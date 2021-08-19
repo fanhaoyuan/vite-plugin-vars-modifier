@@ -8,7 +8,7 @@
     "license": "MIT",
     "scripts": {
         "dev": "vite build --watch",
-        "build": "sh build.sh"
+        "build": "vite build && tsc"
     },
     "gitHooks": {
         "pre-commit": "lint-staged",
