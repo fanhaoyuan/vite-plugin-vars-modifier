@@ -6,6 +6,17 @@
     "repository": "https://github.com/fanhaoyuan/vite-plugin-vars-modifier.git",
     "author": "Fansy <418536538@qq.com>",
     "license": "MIT",
+    "description": "A vite plugin for transform variables to config",
+    "keywords": [
+        "vite",
+        "vite-plugin",
+        "plugin",
+        "less",
+        "sass",
+        "scss",
+        "vars",
+        "variables"
+    ],
     "scripts": {
         "dev": "vite build --watch",
         "build": "vite build && tsc"
