@@ -25,7 +25,7 @@
     },
     "dependencies": {
         "fast-glob": "^3.2.7",
-        "less-json-vars": "^1.0.2"
+        "less-json-vars": "^1.1.0"
     },
     "devDependencies": {
         "@fansy/commit-msg-validator": "^1.0.0",
