@@ -19,7 +19,7 @@
     ],
     "scripts": {
         "dev": "vite build --watch",
-        "build": "vite build && tsc"
+        "test": "jest test"
     },
     "gitHooks": {
         "pre-commit": "lint-staged",
@@ -39,15 +39,20 @@
         "less-json-vars": "^1.1.0"
     },
     "devDependencies": {
+        "@babel/preset-env": "^7.15.0",
+        "@babel/preset-typescript": "^7.15.0",
         "@fansy/commit-msg-validator": "^1.0.0",
         "@fansy/eslint-config": "^1.0.0",
         "@fansy/prettier-config": "^1.0.0",
+        "@jest/types": "^27.0.6",
+        "@types/jest": "^27.0.1",
         "@types/less": "^3.0.3",
         "@types/node": "^16.6.0",
         "eslint": "^7.32.0",
+        "jest": "^27.0.6",
         "lint-staged": "^11.1.2",
         "prettier": "^2.3.2",
-        "typescript": "^4.3.5",
-        "vite": "^2.4.4"
+        "ts-node": "^10.2.1",
+        "typescript": "^4.3.5"
     }
 }
