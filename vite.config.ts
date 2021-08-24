@@ -7,6 +7,7 @@ export default defineConfig({
         lib: {
             entry: 'src/index.ts',
             formats: ['cjs'],
+            fileName: () => 'index.js',
         },
         rollupOptions: {
             external: [...Object.keys(dependencies), 'fs', 'path'],

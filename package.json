@@ -1,8 +1,8 @@
 {
     "name": "vite-plugin-vars-modifier",
     "version": "1.0.0",
-    "main": "dist/vite-plugin-vars-modifier.cjs.js",
-    "types": "dist/types/index.d.ts",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "repository": "https://github.com/fanhaoyuan/vite-plugin-vars-modifier.git",
     "author": "Fansy <418536538@qq.com>",
     "license": "MIT",
