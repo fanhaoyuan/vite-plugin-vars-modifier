@@ -4,6 +4,10 @@ export type ParserType = 'less';
 export interface ModifierOptions {
     /**
      * paths for content to pass to parser.
+     *
+     * support glob format
+     *
+     * @see https://github.com/mrmlnc/fast-glob#readme
      */
     paths: string | string[];
 
