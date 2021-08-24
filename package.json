@@ -17,6 +17,9 @@
         "vars",
         "variables"
     ],
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "dev": "vite build --watch",
         "build": "vite build && tsc",
