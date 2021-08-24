@@ -1,5 +1,5 @@
 /**Typeof parser of modifier */
-type ParserType = 'less';
+export type ParserType = 'less';
 
 export interface ModifierOptions {
     /**
@@ -19,3 +19,5 @@ export interface ModifierOptions {
      */
     type: ParserType;
 }
+
+export type Parser = (content: string, options: ModifierOptions) => Record<string, string>;
