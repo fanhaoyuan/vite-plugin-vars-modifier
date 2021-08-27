@@ -1,4 +1,5 @@
-import { isString, concat } from 'lodash-es';
+import isString from 'lodash.isstring';
+import concat from 'lodash.concat';
 import glob from 'fast-glob';
 import { ParserType } from './interfaces';
 

@@ -1,6 +1,6 @@
 import { ModifierOptions } from './interfaces';
 import { PluginOption, UserConfig } from 'vite';
-import { merge } from 'lodash-es';
+import merge from 'lodash.merge';
 import { modifier } from './modifier';
 
 export * from './interfaces';
