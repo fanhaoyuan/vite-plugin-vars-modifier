@@ -8,7 +8,7 @@ import * as fs from 'fs';
 export * from './interfaces';
 
 const defaultOptions: ModifierOptions = {
-    strip: false,
+    strip: true,
     paths: [],
     type: null,
 };
