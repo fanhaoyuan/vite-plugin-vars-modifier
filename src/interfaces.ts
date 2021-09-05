@@ -1,5 +1,5 @@
 /**Typeof parser of modifier */
-export type ParserType = 'less';
+export type ParserType = 'less' | 'scss';
 
 export interface ModifierOptions {
     /**

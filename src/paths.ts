@@ -5,6 +5,7 @@ import { ParserType } from './interfaces';
 
 const extensions: Record<ParserType, string[]> = {
     less: ['less'],
+    scss: ['scss'],
 };
 
 /**
