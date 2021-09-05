@@ -10,6 +10,7 @@ export const getViteConfig = (type: ParserType, options: UserConfig = {}): Inlin
         plugins: [
             vitePluginVarsModifier({
                 paths: getAssetsPath('/*'),
+                strip: false,
                 type,
             }),
         ],
