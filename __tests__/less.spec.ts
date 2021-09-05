@@ -1,7 +1,7 @@
 import { resolveConfig, ResolvedConfig } from 'vite';
-import { getViteConfig } from '../utils';
+import { getViteConfig } from './utils';
 
-test('base less config', async () => {
+test('default', async () => {
     const baseConfig = getViteConfig('less');
 
     const lessCase = (config: ResolvedConfig) => {
@@ -17,7 +17,7 @@ test('base less config', async () => {
     lessCase(serveConfig);
 });
 
-test('less config with extra vars', async () => {
+test('config with extra vars', async () => {
     const lessConfig = getViteConfig('less', {
         css: {
             preprocessorOptions: {

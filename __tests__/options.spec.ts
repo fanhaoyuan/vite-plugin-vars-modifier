@@ -1,18 +1,17 @@
 import { resolveConfig } from 'vite';
-import varsModifier from '../src';
+import vitePluginVarsModifier from '../src';
 
 test('no options', async () => {
     let err;
 
     try {
-        const buildConfig = await resolveConfig(
+        await resolveConfig(
             {
-                plugins: [varsModifier()],
+                //@ts-ignore
+                plugins: [vitePluginVarsModifier()],
             },
             'build'
         );
-
-        console.log(buildConfig);
     } catch (error) {
         err = error;
     }
