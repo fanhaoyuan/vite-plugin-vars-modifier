@@ -24,4 +24,4 @@ export interface ModifierOptions {
     type: ParserType;
 }
 
-export type Parser = (content: string, options: ModifierOptions) => Record<string, string>;
+export type UserOptions = Partial<ModifierOptions> & Pick<ModifierOptions, 'paths' | 'type'>;
