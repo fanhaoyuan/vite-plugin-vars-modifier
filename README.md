@@ -56,9 +56,13 @@ export interface ModifierOptions {
     /**
      * Typeof parser of modifier
      */
-    type: 'less';
+    type: 'less' | 'scss';
 }
 ```
+
+## relation
+
+-   [css-preprocessor-variables](https://github.com/fanhaoyuan/css-preprocessor-variables) -- Convert variables content to json.
 
 ## License
 

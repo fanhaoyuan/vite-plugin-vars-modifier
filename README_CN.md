@@ -56,9 +56,13 @@ export interface ModifierOptions {
     /**
      * 转换类型
      */
-    type: 'less';
+    type: 'less' | 'scss';
 }
 ```
+
+## 相关
+
+-   [css-preprocessor-variables](https://github.com/fanhaoyuan/css-preprocessor-variables) -- 转换文件内容中的 css 预处理器变量为`JSON`格式.
 
 ## 许可证
 
